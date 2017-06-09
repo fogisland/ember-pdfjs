@@ -39,13 +39,6 @@ module.exports = {
     return mergeTrees(trees);
   },
 
-  treeForPublic: function(tree) {
-    var trees = [];
-    trees.push(this._super.treeForPublic.apply(this, arguments));
-
-    return mergeTrees(trees);
-  },
-
   included: function(app, parentAddon) {
 
     this._super.included.apply(this, arguments);
