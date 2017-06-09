@@ -132,7 +132,7 @@ export default Ember.Component.extend({
   */
   didInsertElement: function() {
 
-    let [container] = this.element.getElementsByClassName('pdfViewerContainer');
+    let container = this.element.getElementsByClassName('pdfViewerContainer')[0];
     set(this, '_container', container);
 
     let linkService = new PDFLinkService();
