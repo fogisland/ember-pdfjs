@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mysterlune/ember-pdfjs.git"
+    "url": "https://github.com/fogisland/ember-pdfjs.git"
   },
   "dependencies": {
     "ember-cli-htmlbars": "^1.0.10",
