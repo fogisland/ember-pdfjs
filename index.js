@@ -14,7 +14,7 @@ module.exports = {
 
     var PDFJS = new Funnel('bower_components/pdfjs-dist/build',{
         srcDir: '/',
-        include: ['pdf.js','pdf.worker.js'],
+        include: ['pdf.min.js','pdf.worker.min.js'],
         destDir: '/'
     });
 
@@ -42,14 +42,6 @@ module.exports = {
   treeForPublic: function(tree) {
     var trees = [];
     trees.push(this._super.treeForPublic.apply(this, arguments));
-
-    var publicFiles = new Funnel(tree, {
-        srcDir: '/',
-        include: ['test.pdf'],
-        destDir: '/assets'
-    });
-
-    trees.push(publicFiles);
 
     return mergeTrees(trees);
   },
